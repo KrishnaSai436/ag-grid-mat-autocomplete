@@ -1,0 +1,12 @@
+<mat-card>
+    <div class="container" #group tabindex="0" (keydown)="onKeyDown($event)">
+        <mat-form-field style="height: 100%;">
+            <input matInput [matAutocomplete]="auto" [formControl]="valueCtrl">
+            <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let v of filteredValues | async" [value]="v">
+                    {{ v }}
+                </mat-option>
+        </mat-autocomplete>
+        </mat-form-field>
+    </div>
+</mat-card>
