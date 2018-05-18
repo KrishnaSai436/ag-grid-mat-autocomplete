@@ -17,7 +17,7 @@ export class AppComponent {
       onGridReady: () => {
         this.gridOptions.api.sizeColumnsToFit();
       },
-      rowHeight: 58,
+      rowHeight: 30,
       frameworkComponents: {
         autocompleteEditor: AutoCompleteComponent
       }
@@ -30,7 +30,7 @@ export class AppComponent {
       { headerName: 'Model', field: 'model' },
       { headerName: 'Price', field: 'price' },
       { headerName: 'Custom', field: 'custom', cellEditor: 'autocompleteEditor', cellEditorParams: {
-        values: ["aaabbcc", "aaccc", "aaabcc"]
+        values: ["Java", "R", "JavaScript", "AWS", "Angular", "React", "OS", "Perl", "HTML", "CSS"]
       }, editable: true }
     ];
 }

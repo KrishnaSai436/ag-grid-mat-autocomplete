@@ -1,9 +1,12 @@
 <ag-grid-angular
-  style="width: 100vw; height: 100vh;"
+  style="width: 70vw; height: 20vh; padding-left: 15%; padding-top: 20%"
   class="ag-theme-balham"
+  [enableSorting]="true"
+  [enableFilter]="true"
   [rowData]="rowData"
   [columnDefs]="columnDefs"
   [gridOptions]="gridOptions"
+  singleClickEdit=true
 >
 
 </ag-grid-angular>
